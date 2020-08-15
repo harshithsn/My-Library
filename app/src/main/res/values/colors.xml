@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fca311</color>
+    <color name="Orange">#fca311</color>
+    <color name="Black">#000</color>
+    <color name="White">#fff</color>
+    <color name="ProfileBK">#fece2f</color>
+    <color name="Transparent">#00000000</color>
+</resources>
