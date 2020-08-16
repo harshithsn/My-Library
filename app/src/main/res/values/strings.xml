@@ -7,4 +7,8 @@
     <string name="new_user">New User SIGN UP</string>
     <string name="sign_up_to_continue">SignUp to start your Library Journey</string>
     <string name="Already_have_an_account">Already have an account? LogIN</string>
+
+    <string name="subtitle">Explore the world of books.</string>
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="close_navigation_drawer">Close navigation drawer</string>
 </resources>
