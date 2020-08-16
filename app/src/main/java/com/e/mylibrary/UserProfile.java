@@ -4,13 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputLayout;
 
 public class UserProfile extends AppCompatActivity {
 
     TextInputLayout fullName, email, password, username, phone;
+    Button sat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,15 @@ public class UserProfile extends AppCompatActivity {
         password = findViewById(R.id.p_passorwd);
         username = findViewById(R.id.p_username);
         phone = findViewById(R.id.p_phone);
+        sat = findViewById(R.id.p_update);
+
+        sat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserProfile.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         showAllUserData();
 

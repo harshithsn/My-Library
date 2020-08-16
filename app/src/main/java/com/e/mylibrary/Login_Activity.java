@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Login_Activity extends AppCompatActivity {
 
+    private static final String TAG ="new";
     Button callSignUp,LoginGo;
     TextInputLayout username,password;
 
@@ -34,6 +38,10 @@ public class Login_Activity extends AppCompatActivity {
         password = findViewById(R.id.login_password);
         callSignUp = findViewById(R.id.login_signup);
         LoginGo = findViewById(R.id.login_lets_go);
+
+        //check
+
+
 
         LoginGo.setOnClickListener(new View.OnClickListener() {
             @Override
